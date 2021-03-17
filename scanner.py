@@ -3,12 +3,7 @@ import time
 starting_time = time.time()
 system_ports = (0,1023)
 user_ports = (1024, 49151)
-#Needed: Address, Ports
 
-"""
-Establish a connection through sockets
--> If connection successfull -> Port Open
-"""
 
 def testport(ip_address, port_address):
     s = socket(AF_INET, SOCK_STREAM)
